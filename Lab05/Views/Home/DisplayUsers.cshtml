@@ -1,0 +1,22 @@
+﻿@model List<User>
+<table class="styled-table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Password</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.Name</td>
+                <td>@user.Password</td>
+                <td>
+                    <a asp-controller="Home" asp-action="AddToCart" asp-route-id="@user.Id">Add to Cart</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

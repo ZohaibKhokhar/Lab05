@@ -1,0 +1,11 @@
+﻿
+@{
+    Layout="_Layout";
+}
+@if (TempData["Message"] != null){
+    <div class="alert alert-success">
+        @TempData["Message"]
+    </div>
+}
+<h2>Welcome to the Home Page</h2>
+

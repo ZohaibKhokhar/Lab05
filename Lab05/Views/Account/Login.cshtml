@@ -1,0 +1,13 @@
+﻿@model User
+
+<form asp-action="Login" asp-controller="Account" method="post">
+    <label asp-for="Email">Email</label>
+    <input type="text" asp-for="Email" placeholder="Enter Email" name="email" required />
+    <br><br>
+
+    <label asp-for="Password">Password:</label>
+    <input type="password" asp-for="Password" placeholder="Enter Password" name="password" required />
+    <br><br>
+
+    <input type="submit" value="Submit" />
+</form>
